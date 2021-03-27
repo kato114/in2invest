@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Softnio" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<!-- Fav Icon  -->
+		<link rel="shortcut icon" href="images/favicon.png" />
+		<!-- Site Title  -->
+		<title>IN2INVEST</title>
+		<!-- Bundle and Base CSS -->
+		<link rel="stylesheet" href="assets/css/vendor.bundle.css" />
+		<link rel="stylesheet" href="assets/css/style-azalea.css" id="changeTheme" />
+		<!-- Extra CSS -->
+		<link rel="stylesheet" href="assets/css/theme.css" />
+	</head>
+	<body class="nk-body body-wider bg-theme mode-onepage">
+		<div class="nk-wrap">
+			<header class="nk-header page-header is-transparent is-sticky is-dark" id="header">
+				<!-- Header @s -->
+				<div class="header-main">
+					<div class="header-container container container-xxl">
+						<div class="header-wrap">
+							<!-- Logo @s -->
+							<div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".6">
+								<a href="./" class="logo-link">
+									<img class="logo-light logo-desktop" src="images/logo_desktop.png" srcset="images/logo_desktop.png 2x" alt="logo" />
+									<img class="logo-light logo-mobile" src="images/logo_mobile.png" srcset="images/logo_mobile.png 2x" alt="logo" />
+								</a>
+							</div>
+							<div>
+								<button id="btn_connect" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span>Connect</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .header-main @e -->
+
+				<div class="banner banner-fs tc-light">
+					<div class="nk-block nk-block-sm nk-block-header my-auto">
+						<div class="container container-xxl pt-5">
+							<div class="row align-items-center justify-content-center justify-content-lg-between gutter-vr-30px">
+								<div class="col-lg-6 order-lg-last">
+									<div class="banner-gfx banner-gfx-auto animated" data-animate="fadeInUp" data-delay=".7">
+										<img src="images/azalea/gfx-e.png" alt="header" />
+									</div>
+								</div>
+								<!-- .col -->
+								<div class="col-xl-5 col-lg-6 col-sm-10 text-center text-lg-left">
+									<div class="banner-caption">
+										<h1 class="title title-lg ttu animated" data-animate="fadeInUp" data-delay=".8">Make Your Crypto III</h1>
+										<p class="lead animated" data-animate="fadeInUp" data-delay=".9">BUY CLIMB TOKENS WITH BNB</p>
+										<div class="d-md-flex">
+											<div>
+												<img class="img_coin" src="images/coin_bnb.png" width="30" alt="" />
+												<input class="input-bordered" id="inp_bnb" type="text" placeholder="Enter BNB Amount" />
+											</div>
+											<div class="text-center mx-3 my-2">
+												<i class="fas fa-chevron-right swap-icon-right"></i>
+											</div>
+											<div>
+												<img class="img_coin" src="images/coin_iii.png" width="30" alt="" />
+												<input class="input-bordered" id="inp_iii" type="text" placeholder="Enter  I I I  Amount" />
+											</div>
+										</div>
+										<div class="cpn-action animated" data-animate="fadeInUp" data-delay="1">
+											<button id="btn_swap" class="btn btn-primary btn-round">Swap Now</button>
+										</div>
+									</div>
+								</div>
+								<!-- .col -->
+							</div>
+							<!-- .row -->
+						</div>
+					</div>
+					<div class="nk-block nk-block-status">
+						<div class="container container-xxl">
+							<div class="row gutter-vr-40px justify-content-between">
+								<div class="col-xxl-6 col-xl-5 col-lg-5">
+									<div class="progress-wrap progress-wrap-point animated" data-animate="fadeInUp" data-delay="0.8">
+										<ul class="progress-info progress-info-s2">
+											<li>
+												Raised - <span><span id="contract_balance">0</span> Tokens</span>
+											</li>
+											<li class="text-right">Target - <span>25,000,000 Tokens</span></li>
+										</ul>
+										<div class="progress-bar progress-bar-xs">
+											<div class="progress-percent progress-percent-s2 percent" data-percent="0"></div>
+											<div class="progress-point" data-point="25">Soft Cap</div>
+											<div class="progress-point" data-point="55">Crowdsale</div>
+											<div class="progress-point" data-point="85">Hard Cap</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xxl-5 col-xl-6 col-lg-7 text-center text-sm-left">
+									<div class="row justify-content-around gutter-vr-30px">
+										<div class="col-sm-4 col-md-6 col-lg-4 col-xl-5">
+											<div class="status-info animated" data-animate="fadeInUp" data-delay="0.9">
+												<h6 class="title title-xxs tc-default status-title ttu">Token Ratio</h6>
+												<h3 class="fz-3 fw-3 status-percent">1 BNB = 500 III</h3>
+												<div class="fz-8">You can receive 500 token with 1 BNB</div>
+											</div>
+										</div>
+										<div class="col-sm-4 col-md-6 col-lg-4 col-xl-5">
+											<div class="status-info animated" data-animate="fadeInUp" data-delay="0.9">
+												<h6 class="title title-xxs tc-default status-title ttu">You Balance</h6>
+												<h3 id="wallet_balance" class="fz-3 fw-3 status-percent">0</h3>
+												<div class="fz-8">Amount of III token in your wallet</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nk-block nk-block-actions">
+						<div class="container container-xxl">
+							<div class="row gutter-vr-40px align-items-center">
+								<div class="col-sm-7 d-flex justify-content-center justify-content-sm-start">
+									<ul class="btn-grp btn-grp-break justify-content-center justify-content-sm-start gutter-vr-20px">
+										<li class="animated" data-animate="fadeInUp" data-delay="0.2">
+											<a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" class="link link-light link-break video-popup"><em class="icon-circle icon-border icon-animation fas fa-play"></em><span>How it Works</span></a>
+										</li>
+										<li class="animated" data-animate="fadeInUp" data-delay="0.3">
+											<a href="#" class="link link-light link-break"><em class="icon-circle icon-border far fa-lightbulb"></em><span>Why buy Tokens now?</span></a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm-5">
+									<ul class="social-links social-links-s2 justify-content-center justify-content-sm-end animated" data-animate="fadeInUp" data-delay="0.4">
+										<li>
+											<a href="#"><em class="fab fa-twitter"></em></a>
+										</li>
+										<li>
+											<a href="#"><em class="fab fa-medium-m"></em></a>
+										</li>
+										<li>
+											<a href="#"><em class="fab fa-facebook-f"></em></a>
+										</li>
+										<li>
+											<a href="#"><em class="fab fa-youtube"></em></a>
+										</li>
+										<li>
+											<a href="#"><em class="fab fa-bitcoin"></em></a>
+										</li>
+										<li>
+											<a href="#"><em class="fab fa-github"></em></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Place Particle Js -->
+					<div id="particles-bg" class="particles-container is-fixed particles-bg op-20"></div>
+				</div>
+			</header>
+
+			<div class="nk-ovm nk-ovm-repeat nk-ovm-fixed shape-i">
+				<div class="ovm-line"></div>
+			</div>
+		</div>
+		<div class="preloader preloader-alt no-split">
+			<span class="spinner spinner-alt"><img class="spinner-brand" src="images/logo_mobile.png" alt="" /></span>
+		</div>
+		<div class="loader active">
+			<img src="images/loader.png" alt="" />
+			<p>Processing...</p>
+		</div>
+		<div class="alert_list"></div>
+		<script src="assets/js/jquery.bundle.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
