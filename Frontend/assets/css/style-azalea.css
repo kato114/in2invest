@@ -18366,14 +18366,14 @@ hr + .nk-block {
 	position: absolute !important;
 }
 
-/* .has-fixed .header-main { position: fixed !important; box-shadow: 0 0 20px 0 rgba(45, 63, 95, 0.08); } */
+.has-fixed .header-main { position: fixed !important; box-shadow: 0 0 20px 0 rgba(45, 63, 95, 0.08); }
 
 .has-fixed:not(.is-dark) .header-main {
 	background: #fff;
 }
 
 .has-fixed.is-dark .header-main {
-	/* background: #0a1227; */
+	background: #0a1227;
 }
 
 .has-fixed.is-shrink .header-main {

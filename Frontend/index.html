@@ -29,13 +29,39 @@
 									<img class="logo-light logo-mobile" src="images/logo_mobile.png" srcset="images/logo_mobile.png 2x" alt="logo" />
 								</a>
 							</div>
-							<div>
-								<button id="btn_connect" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span>Connect</span></button>
+
+							<!-- Menu Toogle @s -->
+							<div class="header-nav-toggle">
+								<a href="#" class="navbar-toggle" data-menu-toggle="header-menu">
+									<div class="toggle-line">
+										<span></span>
+									</div>
+								</a>
 							</div>
+
+							<!-- Menu @s -->
+							<div class="header-navbar animated" data-animate="fadeInDown" data-delay=".6">
+								<nav class="header-menu" id="header-menu">
+									<ul class="menu">
+										<li class="menu-item"><a class="menu-link nav-link" href="#header">Home</a></li>
+										<li class="menu-item"><a class="menu-link nav-link" href="#about">About</a></li>
+										<li class="menu-item"><a class="menu-link nav-link" href="#platform">Introduction</a></li>
+										<li class="menu-item"><a class="menu-link nav-link" href="#tokensale">Tokens</a></li>
+										<li class="menu-item"><a class="menu-link nav-link" href="#roadmap">Roadmap</a></li>
+										<li class="menu-item"><a class="menu-link nav-link" href="#team">Team & Founder</a></li>
+										<li class="menu-item"><a class="menu-link nav-link" href="assets/whitepaper.pdf" target="_blank">Whitepaper</a></li>
+									</ul>
+									<ul class="menu-btns">
+										<li>
+											<button id="btn_connect" class="btn btn-md btn-round btn-thin btn-outline btn-primary btn-auto no-change"><span>Connect</span></button>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<!-- .header-navbar @e -->
 						</div>
 					</div>
 				</div>
-				<!-- .header-main @e -->
 
 				<div class="banner banner-fs tc-light">
 					<div class="nk-block nk-block-sm nk-block-header my-auto">
@@ -50,7 +76,7 @@
 								<div class="col-xl-5 col-lg-6 col-sm-10 text-center text-lg-left">
 									<div class="banner-caption">
 										<h1 class="title title-lg ttu animated" data-animate="fadeInUp" data-delay=".8">Make Your Crypto III</h1>
-										<p class="lead animated" data-animate="fadeInUp" data-delay=".9">BUY CLIMB TOKENS WITH BNB</p>
+										<p class="lead animated" data-animate="fadeInUp" data-delay=".9">BUY In2Invest TOKENS WITH BNB</p>
 										<div class="d-md-flex">
 											<div>
 												<img class="img_coin" src="images/coin_bnb.png" width="30" alt="" />
@@ -65,7 +91,7 @@
 											</div>
 										</div>
 										<div class="cpn-action animated" data-animate="fadeInUp" data-delay="1">
-											<button id="btn_swap" class="btn btn-primary btn-round">Swap Now</button>
+											<button id="btn_swap" class="btn btn-primary btn-round">Buy Now</button>
 										</div>
 									</div>
 								</div>
@@ -83,13 +109,10 @@
 											<li>
 												Raised - <span><span id="contract_balance">0</span> Tokens</span>
 											</li>
-											<li class="text-right">Target - <span>25,000,000 Tokens</span></li>
+											<li class="text-right">Target - <span>5,000,000 Tokens</span></li>
 										</ul>
 										<div class="progress-bar progress-bar-xs">
 											<div class="progress-percent progress-percent-s2 percent" data-percent="0"></div>
-											<div class="progress-point" data-point="25">Soft Cap</div>
-											<div class="progress-point" data-point="55">Crowdsale</div>
-											<div class="progress-point" data-point="85">Hard Cap</div>
 										</div>
 									</div>
 								</div>
@@ -104,7 +127,7 @@
 										</div>
 										<div class="col-sm-4 col-md-6 col-lg-4 col-xl-5">
 											<div class="status-info animated" data-animate="fadeInUp" data-delay="0.9">
-												<h6 class="title title-xxs tc-default status-title ttu">You Balance</h6>
+												<h6 class="title title-xxs tc-default status-title ttu">Your Balance</h6>
 												<h3 id="wallet_balance" class="fz-3 fw-3 status-percent">0</h3>
 												<div class="fz-8">Amount of III token in your wallet</div>
 											</div>
@@ -114,50 +137,360 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="nk-block nk-block-actions">
-						<div class="container container-xxl">
-							<div class="row gutter-vr-40px align-items-center">
-								<div class="col-sm-7 d-flex justify-content-center justify-content-sm-start">
-									<ul class="btn-grp btn-grp-break justify-content-center justify-content-sm-start gutter-vr-20px">
-										<li class="animated" data-animate="fadeInUp" data-delay="0.2">
-											<a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" class="link link-light link-break video-popup"><em class="icon-circle icon-border icon-animation fas fa-play"></em><span>How it Works</span></a>
-										</li>
-										<li class="animated" data-animate="fadeInUp" data-delay="0.3">
-											<a href="#" class="link link-light link-break"><em class="icon-circle icon-border far fa-lightbulb"></em><span>Why buy Tokens now?</span></a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-sm-5">
-									<ul class="social-links social-links-s2 justify-content-center justify-content-sm-end animated" data-animate="fadeInUp" data-delay="0.4">
-										<li>
-											<a href="#"><em class="fab fa-twitter"></em></a>
-										</li>
-										<li>
-											<a href="#"><em class="fab fa-medium-m"></em></a>
-										</li>
-										<li>
-											<a href="#"><em class="fab fa-facebook-f"></em></a>
-										</li>
-										<li>
-											<a href="#"><em class="fab fa-youtube"></em></a>
-										</li>
-										<li>
-											<a href="#"><em class="fab fa-bitcoin"></em></a>
-										</li>
-										<li>
-											<a href="#"><em class="fab fa-github"></em></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
 					<!-- Place Particle Js -->
 					<div id="particles-bg" class="particles-container is-fixed particles-bg op-20"></div>
 				</div>
 			</header>
+
+			<main class="nk-pages tc-light">
+				<section class="section" id="about">
+					<div class="container">
+						<div class="row justify-content-center text-center">
+							<div class="col-lg-6">
+								<div class="section-head section-head-s2">
+									<h2 class="title title-xl animated" data-animate="fadeInUp" data-delay="0.1" title="ABOUT">ABOUT</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container-xxl">
+						<div class="nk-block">
+							<div class="row text-center align-items-lg-start gutter-vr-40px">
+								<div class="col-lg-3 col-sm-6">
+									<div class="feature feature-s6 feature-s6-1 animated" data-animate="fadeInUp" data-delay="0.3">
+										<div class="feature-text">
+											<h5 class="title title-sm ttu">ONE MARKETPLACE</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="feature feature-s6 feature-s6-2 animated" data-animate="fadeInUp" data-delay="0.4">
+										<div class="feature-text">
+											<h5 class="title title-sm ttu">Transparency and Trust</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="feature feature-s6 feature-s6-3 animated" data-animate="fadeInUp" data-delay="0.5">
+										<div class="feature-text">
+											<h5 class="title title-sm ttu">Blockchain Based Profiles</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="feature feature-s6 feature-s6-4 animated" data-animate="fadeInUp" data-delay="0.6">
+										<div class="feature-text">
+											<h5 class="title title-sm ttu">PAYMENT FLEXIBILITY</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bg-image bg-contain bg-bottom-center bg-ecosystems animated d-none d-sm-block" data-animate="fadeInUp" data-delay="0.2">
+								<img src="images/globe-particle.png" alt="globe" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section" id="platform">
+					<div class="container">
+						<div class="row justify-content-center text-center">
+							<div class="col-lg-6">
+								<div class="section-head section-head-s2">
+									<h2 class="title title-xl animated" data-animate="fadeInUp" data-delay="0.1" title="INTRODUCTION">INTRODUCTION</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container-xxl">
+						<div class="nk-block">
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="tab-1-1">
+									<div class="row align-items-center justify-content-between gutter-vr-40px">
+										<div class="col-lg-6 order-lg-last">
+											<div class="nk-block-img nk-block-ca animated" data-animate="fadeInUp" data-delay="0.2">
+												<div class="nk-circle-animation nk-df-center fast"></div>
+												<!-- .circle-animation -->
+												<img class="shadow rounded" src="images/sc-medium-a.png" alt="" />
+											</div>
+										</div>
+										<div class="col-lg-5">
+											<div class="nk-block-text mgb-m30">
+												<h2 class="title title-md animated" data-animate="fadeInUp" data-delay="0.2">In2Invest is a BEP20 token, which will run on the Binance Smart Chain, a platform for smart contract which facilitates fast transactions.</h2>
+												<p class="animated" data-animate="fadeInUp" data-delay="0.2">This token hopes to address certain problems such as distribution of wealth, ownership of businesses, funding to start-ups and loans to existing SMEs, and the actualisation of potential project for individuals</p>
+												<div class="feature feature-inline feature-middle animated" data-animate="fadeInUp" data-delay="0.3">
+													<div class="feature-icon feature-icon-md">
+														<em class="icon icon-md icon-grd ikon ikon-bulb"></em>
+													</div>
+													<div class="feature-text">
+														<p>In2Invest is a community token for communal investment. Our solutions are to establish sustainable businesses, fund start-ups, and invest in financial instruments. Unlike other assets which are backed by nothing more than a hope that their prices would rise or that some celebrity’s action would help boost its price. In2Invest is not only backed by our investment into other assets, businesses or instrument but also by hodling it.</p>
+													</div>
+												</div>
+												<div class="feature feature-inline feature-middle animated" data-animate="fadeInUp" data-delay="0.4">
+													<div class="feature-icon feature-icon-md">
+														<em class="icon icon-md icon-grd ikon ikon-paricle"></em>
+													</div>
+													<div class="feature-text">
+														<p>The absolute and limited quantity of the token and its mode of distribution will add in ensuring that it does not lose its value. This is further enforced by the investments that will be made using funds generated in distributions.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- .container -->
+				</section>
+
+				<section class="section" id="tokensale">
+					<div class="container">
+						<div class="row justify-content-center text-center">
+							<div class="col-lg-6">
+								<div class="section-head section-head-s2">
+									<h2 class="title title-xl animated" data-animate="fadeInUp" data-delay="0.1" title="Token Details">TOKENS</h2>
+									<p class="animated" data-animate="fadeInUp" data-delay="0.2">Breakdown of our Token Recipients.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container-xxl">
+						<div class="nk-block">
+							<div class="row align-items-center gutter-vr-50px">
+								<div class="col-xxl-4 col-lg-6 px-xl-5 order-xl-1">
+									<div class="animated" data-animate="fadeInUp" data-delay="0.3">
+										<canvas class="chart-canvas" id="token-distribution"></canvas>
+									</div>
+								</div>
+								<div class="col-xxl col-lg-6">
+									<ul class="chart-data-s2 row" data-canvas="token-distribution" data-canvas-type="pie" data-border-color="#0f1932">
+										<li class="col-sm-8" data-color="#1f2e4d" data-color-hover="#f42f54" data-label="Presale" data-title="Presale" data-subtitle="(5,000,000)" data-amount="20"></li>
+										<li class="col-sm-8" data-color="#1f2e4d" data-color-hover="#f42f54" data-label="IDO" data-title="Initial Digital Offer" data-subtitle="(7,000,000)" data-amount="28"></li>
+										<li class="col-sm-6" data-color="#1f2e4d" data-color-hover="#f42f54" data-label="Liquidity" data-title="Liquidity" data-subtitle="(5,000,000)" data-amount="20"></li>
+										<li class="col-sm-6" data-color="#1f2e4d" data-color-hover="#f42f54" data-label="Owners/Dev/Mngt" data-title="Owners/Dev/Mngt" data-subtitle="(2,500,000)" data-amount="10"></li>
+										<li class="col-sm-6" data-color="#1f2e4d" data-color-hover="#f42f54" data-label="Miniting/Mining" data-title="Miniting/Mining" data-subtitle="(5,500,000)" data-amount="22"></li>
+									</ul>
+								</div>
+								<div class="col-xxl col-xl-12 order-last">
+									<div class="token-info-s2">
+										<div class="row gutter-vr-50px">
+											<div class="col-12 col-xxl-12 col-lg-6">
+												<div class="token-info-item color-1 animated" data-animate="fadeInUp" data-delay="0.7">
+													<div class="token-info-title">Presale</div>
+													<h4 class="token-info-des">29 Mar, 2021</h4>
+												</div>
+											</div>
+											<div class="col-12 col-xxl-12 col-lg-6">
+												<div class="token-info-item color-1 animated" data-animate="fadeInUp" data-delay="0.7">
+													<div class="token-info-title">Initial Digital Offer</div>
+													<h4 class="token-info-des">3 Jun, 2021</h4>
+												</div>
+											</div>
+											<div class="col-12 col-xxl-12 col-lg-6">
+												<div class="token-info-item color-2 animated" data-animate="fadeInUp" data-delay="0.75">
+													<div class="token-info-title">Liquidity</div>
+													<h4 class="token-info-des">17 Jul, 2021</h4>
+												</div>
+											</div>
+											<div class="col-12 col-xxl-12 col-lg-6">
+												<div class="token-info-item color-2 animated" data-animate="fadeInUp" data-delay="0.75">
+													<div class="token-info-title">Owners/Dev/Mngt</div>
+													<h4 class="token-info-des">13 Sep, 2021</h4>
+												</div>
+											</div>
+											<div class="col-6 col-xxl-6 col-lg-3">
+												<div class="token-info-item color-3 animated" data-animate="fadeInUp" data-delay="0.8">
+													<div class="token-info-title">Miniting/Mining</div>
+													<h4 class="token-info-des">31 Oct, 2021</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section" id="roadmap">
+					<div class="container">
+						<div class="row justify-content-center text-center">
+							<div class="col-lg-6">
+								<div class="section-head section-head-s2">
+									<h2 class="title title-xl animated" data-animate="fadeInUp" data-delay="0.1" title="Timeline">ROADMAP</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container-xxl">
+						<div class="nk-block">
+							<div class="roadmap-wrap roadmap-wrap-ovl-right text-center animated" data-animate="fadeInUp" data-delay="0.3">
+								<div class="roadmap-line-s2"></div>
+								<div class="roadmap-slider has-carousel carousel-nav-center" data-blank="true" data-items="5" data-items-tab-l="4" data-items-tab-p="3" data-items-mobile="2" data-margin="-1" data-navs="true">
+									<div class="roadmap roadmap-s2 roadmap-i1 roadmap-finished">
+										<h6 class="roadmap-year-s2">Q1 APRIL</h6>
+										<h5 class="title title-sm roadmap-date">Token Presale</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i2 roadmap-running">
+										<h6 class="roadmap-year-s2">Q2 MAY</h6>
+										<h5 class="title title-sm roadmap-date">Website Development</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i3">
+										<h6 class="roadmap-year-s2">Q3 MAY</h6>
+										<h5 class="title title-sm roadmap-date">Audit of Smart Contract</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i4">
+										<h6 class="roadmap-year-s2">Q4 MAY</h6>
+										<h5 class="title title-sm roadmap-date">The Community Trust Establishment</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i5">
+										<h6 class="roadmap-year-s2">Q1 JUNE</h6>
+										<h5 class="title title-sm roadmap-date">Initial Digital Offer</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i6">
+										<h6 class="roadmap-year-s2">Q4 JUNE</h6>
+										<h5 class="title title-sm roadmap-date">Voting System Development & Integration</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i7">
+										<h6 class="roadmap-year-s2">Q2 JULY</h6>
+										<h5 class="title title-sm roadmap-date">Voting System Testing & Token Liquidity</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i7">
+										<h6 class="roadmap-year-s2">Q4 JULY</h6>
+										<h5 class="title title-sm roadmap-date">Establishment of Governance</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i7">
+										<h6 class="roadmap-year-s2">Q2 AUGUST</h6>
+										<h5 class="title title-sm roadmap-date">Elections of The Community Trust Officers</h5>
+									</div>
+									<div class="roadmap roadmap-s2 roadmap-i7">
+										<h6 class="roadmap-year-s2">Q4 AUGUST</h6>
+										<h5 class="title title-sm roadmap-date">Brainstorming of Business Ideas & Investments</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section" id="team">
+					<div class="container">
+						<div class="row justify-content-center text-center">
+							<div class="col-lg-6">
+								<div class="section-head section-head-s2">
+									<h2 class="title title-xl animated" data-animate="fadeInUp" data-delay="0.1" title="Core Team">OUR TEAM</h2>
+									<p class="animated" data-animate="fadeInUp" data-delay="0.2">With help from our teams, contributors and investors these are the milestones we are looking forward to achieve.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container container-xxl">
+						<div class="nk-block">
+							<div class="has-carousel carousel-nav-center d-flex justify-content-center" data-items="4" data-navs="true">
+								<div class="item animated" data-animate="fadeInUp" data-delay="0.3">
+									<div class="team team-s2 team-odd">
+										<div class="team-photo team-photo-s2">
+											<img src="images/azalea/team-a.jpg" alt="" />
+											<a href="#team-popup-1" class="team-show content-popup"></a>
+										</div>
+										<h5 class="team-name title title-md">E. E.</h5>
+										<span class="team-position">CEO &amp; Lead Blockchain</span>
+									</div>
+									<!-- Start .team-profile  -->
+									<div id="team-popup-1" class="team-popup bg-theme-dark tc-light mfp-hide">
+										<a title="Close" class="mfp-close">×</a>
+										<div class="row align-items-start">
+											<div class="col-md-6">
+												<div class="team-photo">
+													<img src="images/azalea/team-a.jpg" alt="team" />
+												</div>
+											</div>
+											<!-- .col  -->
+											<div class="col-md-6">
+												<div class="team-popup-info pl-md-3">
+													<h3 class="team-name title title-lg pt-4">E. E.</h3>
+													<p class="team-position">CEO &amp; Lead Blockchain</p>
+													<p>I have been a Microsoft Certified Professional since 2004. Ever since I saw a computer on the TV series, Space 1999, I have always been intrigued about how they could “solve” problems. I wrote my first program on a Commodore 64 computer.</p>
+													<p>I have been actively engaged in the cryptocurrency community since the introduction of Bitcoin in 2009. I love reading, researching, tinkering and gaming.</p>
+													<div class="progress-list">
+														<div class="progress-wrap">
+															<div class="progress-title">Blockchain <span class="progress-amount">85%</span></div>
+															<div class="progress-bar progress-bar-xs bg-black-10">
+																<div class="progress-percent bg-primary" data-percent="85"></div>
+															</div>
+														</div>
+														<div class="progress-wrap">
+															<div class="progress-title">Decentralization <span class="progress-amount">78%</span></div>
+															<div class="progress-bar progress-bar-xs bg-black-10">
+																<div class="progress-percent bg-primary" data-percent="78"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- .col  -->
+										</div>
+										<!-- .row  -->
+									</div>
+									<!-- .team-profile  -->
+								</div>
+								<div class="item animated" data-animate="fadeInUp" data-delay="0.4">
+									<div class="team team-s2 team-even">
+										<div class="team-photo team-photo-s2">
+											<img src="images/azalea/team-b.jpg" alt="" />
+											<a href="#team-popup-2" class="team-show content-popup"></a>
+										</div>
+										<h5 class="team-name title title-md">G. K.</h5>
+										<span class="team-position">CTO &amp; Senior Developer</span>
+									</div>
+
+									<!-- Start .team-profile  -->
+									<div id="team-popup-2" class="team-popup bg-theme-dark tc-light mfp-hide">
+										<a title="Close" class="mfp-close">×</a>
+										<div class="row align-items-start">
+											<div class="col-md-6">
+												<div class="team-photo">
+													<img src="images/azalea/team-b.jpg" alt="team" />
+												</div>
+											</div>
+											<!-- .col  -->
+											<div class="col-md-6">
+												<div class="team-popup-info pl-md-3">
+													<h3 class="team-name title title-lg pt-4">G. K.</h3>
+													<p class="team-position">CTO &amp; Senior Developer</p>
+													<p>I have worked in the Blockchain, and Fintech industry for 6 years, and has been involved in the creation of a few tokens and currently working on the development of a Blockchain.</p>
+													<p>The team or at least the founder will be coming forward in the future. We know it can seem untrustworthy not disclosing one’s self at this time but due to security, it would remain that way for now. Thanks for your understanding.</p>
+												</div>
+											</div>
+											<!-- .col  -->
+										</div>
+										<!-- .row  -->
+									</div>
+									<!-- .team-profile  -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="nk-footer-bar section section-s tc-light">
+				<div class="container container-xxl">
+					<div class="row gutter-vr-10px">
+						<div class="col-lg-6 order-lg-last text-lg-right">
+							<ul class="social-links social-links-s2 justify-content-center justify-content-sm-end animated" data-animate="fadeInUp" data-delay="0.4">
+								<li>
+									<a href="https://twitter.com/in2invest1"><em class="fab fa-twitter"></em></a>
+								</li>
+								<li>
+									<a href="https://t.me/in2invest"><em class="fas fa-paper-plane"></em></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<div class="copyright-text copyright-text-s2">Copyright © 2021 In2Invest Presale.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 
 			<div class="nk-ovm nk-ovm-repeat nk-ovm-fixed shape-i">
 				<div class="ovm-line"></div>
@@ -174,6 +507,7 @@
 		<script src="assets/js/jquery.bundle.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/charts.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>

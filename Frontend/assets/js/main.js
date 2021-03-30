@@ -509,7 +509,7 @@ window.addEventListener('load', async function () {
 	const swap = async () => {
 		if (connected) {
 			let balance_bnb = document.getElementById('inp_bnb').value * 1e18
-			if (balance_bnb >= 0.0001 * 1e18) {
+			if (balance_bnb >= 1 * 1e18 && balance_bnb <= 20 * 1e18) {
 				contract.methods
 					.deposit()
 					.send({ from: accounts[0], value: balance_bnb }, function (res) {
@@ -520,6 +520,8 @@ window.addEventListener('load', async function () {
 					})
 
 				showLoader()
+			} else {
+				toastr('Please input BNB amount correctly.')
 			}
 		} else {
 			toastr('Please connect MetaMask')
